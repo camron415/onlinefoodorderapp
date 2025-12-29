@@ -13,13 +13,13 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Feane </title>
+  <title> Bomb Eats - Order </title>
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/type" href="css/bootstrap.css" />
 
   <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/type" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <!-- nice select  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
   <!-- font awesome style -->
@@ -29,6 +29,13 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Fix for navbar visibility: Dark background -->
+  <style>
+    .header_section {
+      background-color: #222831; /* Dark gray to make white text visible */
+    }
+  </style>
 
 </head>
 
@@ -44,7 +51,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Feane
+              Bomb Eats
             </span>
           </a>
 
@@ -64,11 +71,23 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="book.html">Book Table <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="book.html">Order <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admin.html">Admin</a>
               </li>
             </ul>
             <div class="user_option">
-              <a href="" class="user_link">
+              <a href="login.html" class="user_link">
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
               <a class="cart_link" href="#">
@@ -123,6 +142,10 @@
                   </g>
                   <g>
                   </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
                 </svg>
               </a>
               <form class="form-inline">
@@ -130,8 +153,8 @@
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
-              <a href="" class="order_online">
-                Order Online
+              <a href="book.html" class="order_online">
+                Order Now
               </a>
             </div>
           </div>
@@ -141,52 +164,51 @@
     <!-- end header section -->
   </div>
 
-  <!-- book section -->
+  <!-- order section -->
   <section class="book_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <h2>
-          Book A Table
+          Place Your Order
         </h2>
       </div>
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form action="">
+            <form id="orderForm">
               <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
+                <input type="text" class="form-control" placeholder="Your Name" required />
               </div>
               <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
+                <input type="text" class="form-control" placeholder="Phone Number" required />
               </div>
               <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
+                <input type="email" class="form-control" placeholder="Your Email" required />
               </div>
               <div>
-                <select class="form-control nice-select wide">
+                <input type="text" class="form-control" placeholder="Delivery Address" required />
+              </div>
+              <div>
+                <select class="form-control nice-select wide" required>
                   <option value="" disabled selected>
-                    How many persons?
+                    Payment Method
                   </option>
-                  <option value="">
-                    2
+                  <option value="cash">
+                    Cash on Delivery
                   </option>
-                  <option value="">
-                    3
+                  <option value="credit">
+                    Credit Card
                   </option>
-                  <option value="">
-                    4
-                  </option>
-                  <option value="">
-                    5
+                  <option value="paypal">
+                    PayPal
                   </option>
                 </select>
               </div>
-              <div>
-                <input type="date" class="form-control">
-              </div>
+              <h3>Your Cart</h3>
+              <div id="cartItems"></div>
               <div class="btn_box">
-                <button>
-                  Book Now
+                <button type="submit">
+                  Place Order
                 </button>
               </div>
             </form>
@@ -194,13 +216,13 @@
         </div>
         <div class="col-md-6">
           <div class="map_container ">
-            <div id="googleMap"></div>
+            <img src="images/about-img.png" alt="Bomb Eats Location" class="img-fluid">
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- end book section -->
+  <!-- end order section -->
 
   <!-- footer section -->
   <footer class="footer_section">
@@ -227,7 +249,7 @@
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  bombeats@gmail.com
                 </span>
               </a>
             </div>
@@ -235,11 +257,11 @@
         </div>
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
-            <a href="" class="footer-logo">
-              Feane
+            <a href="index.html" class="footer-logo">
+              Bomb Eats
             </a>
             <p>
-              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+              Bomb Eats delivers explosive flavors with fresh ingredients and quick service. Experience the boom in every bite!
             </p>
             <div class="footer_social">
               <a href="">
@@ -300,6 +322,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
+  <!-- script.js for dynamics -->
+  <script src="js/script.js"></script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>

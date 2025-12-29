@@ -13,13 +13,13 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Bomb Eats - About </title>
+  <title> Bomb Eats - Login </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/type" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <!-- nice select  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
   <!-- font awesome style -->
@@ -67,14 +67,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="menu.html">Menu</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span> </a>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="book.html">Order</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="login.html">Login <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="register.html">Register</a>
@@ -164,37 +164,40 @@
     <!-- end header section -->
   </div>
 
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container  ">
-
+  <!-- login section -->
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Login
+        </h2>
+      </div>
       <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form id="loginForm">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="admin@gmail.com" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="********" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+              <button type="reset" class="btn btn-secondary">Reset</button>
+            </form>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                We Are Bomb Eats
-              </h2>
-            </div>
-            <p>
-              Bomb Eats is a vibrant fast-food restaurant known for its bold, explosive flavors. Founded in 2020, we blend fresh ingredients with innovative recipes to deliver quick, satisfying meals that pack a punch. Our commitment to quality and customer satisfaction makes us the go-to spot for food lovers seeking an unforgettable dining experience.
-            </p>
-            <a href="">
-              Read More
-            </a>
+          <div class="map_container">
+            <img src="images/about-img.png" alt="Food Image" class="img-fluid">
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- end about section -->
+  <!-- end login section -->
 
   <!-- footer section -->
   <footer class="footer_section">
@@ -296,10 +299,6 @@
   <script src="js/custom.js"></script>
   <!-- script.js for dynamics -->
   <script src="js/script.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
 
 </body>
 
