@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "category": "pizza",
+    "name": "Supreme Pepperoni Pizza",
+    "description": "Loaded with pepperoni, mozzarella, and our special tomato sauce on a crispy crust.",
+    "price": 20,
+    "image": "images/f1.png",
+    "options": ["Extra Cheese (+$2)", "Mushrooms (+$1)", "Olives (+$1)"]
+  },
+  {
+    "id": 2,
+    "category": "burger",
+    "name": "Juicy Beef Burger",
+    "description": "A succulent beef patty with fresh lettuce, tomato, onion, and cheese in a soft bun.",
+    "price": 15,
+    "image": "images/f2.png",
+    "options": ["Bacon (+$3)", "Avocado (+$2)", "Double Patty (+$5)"]
+  },
+  {
+    "id": 3,
+    "category": "pizza",
+    "name": "Veggie Delight Pizza",
+    "description": "Fresh vegetables, cheese, and herbs on a thin crust with tomato sauce.",
+    "price": 12,
+    "image": "images/f3.png",
+    "options": ["Extra Veggies (+$1)", "Vegan Cheese (+$2)"]
+  },
+  {
+    "id": 4,
+    "category": "pasta",
+    "name": "Creamy Carbonara Pasta",
+    "description": "Al dente pasta tossed in a creamy sauce with bacon, eggs, and parmesan cheese.",
+    "price": 18,
+    "image": "images/f4.png",
+    "options": ["Extra Bacon (+$2)", "Gluten-Free Pasta (+$3)"]
+  },
+  {
+    "id": 5,
+    "category": "fries",
+    "name": "Golden Crispy Fries",
+    "description": "Perfectly fried potatoes seasoned with salt and served hot and crunchy.",
+    "price": 10,
+    "image": "images/f5.png",
+    "options": ["Cheese Sauce (+$1)", "Truffle Oil (+$2)"]
+  },
+  {
+    "id": 6,
+    "category": "pizza",
+    "name": "Hawaiian Delight Pizza",
+    "description": "Ham, pineapple, and cheese on a classic crust for a sweet and savory treat.",
+    "price": 15,
+    "image": "images/f6.png",
+    "options": ["Extra Ham (+$2)", "Jalapeños (+$1)"]
+  },
+  {
+    "id": 7,
+    "category": "burger",
+    "name": "Spicy Chicken Burger",
+    "description": "Crispy chicken with spicy sauce, lettuce, and pickles.",
+    "price": 14,
+    "image": "images/f7.png",
+    "options": ["Extra Spicy (+$1)", "Cheese (+$1)"]
+  },
+  {
+    "id": 8,
+    "category": "pasta",
+    "name": "Pesto Pasta",
+    "description": "Pasta with fresh basil pesto, cherry tomatoes, and parmesan.",
+    "price": 16,
+    "image": "images/f8.png",
+    "options": ["Chicken (+$4)", "Shrimp (+$5)"]
+  },
+  {
+    "id": 9,
+    "category": "fries",
+    "name": "Loaded Fries",
+    "description": "Fries topped with cheese, bacon, and green onions.",
+    "price": 12,
+    "image": "images/f9.png",
+    "options": ["Sour Cream (+$1)", "Jalapeños (+$1)"]
+  }
+]
